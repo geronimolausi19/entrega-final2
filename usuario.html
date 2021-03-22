@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilos2.css">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- FONT -->
+  <script src="https://kit.fontawesome.com/7271a5d544.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- GOOGLEAPIS -->
+<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body >
+
+  <!-- navbar -->
+  <div class="divNav">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:black " >
+      <a class="navbar-brand letrajumbo"  style="color:white;" href="index.html">Meztiza <i class="fas fa-guitar"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-volume-up" ></i> </span>
+      </button>
+      <a class="navbar-brand derecha"  style="color:white;" href="#"><i class="fas fa-user"></i></a>
+      <br>
+      <br>
+      
+    
+      <a class="navbar-brand "  style="color:white;" id="pusher" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+    </div>
+    
+<br>
+<h1 class="titulo"> Crea tu propia cuenta</h1>
+
+
+
+
+
+
+<!-- formulario -->
+
+
+<main>
+
+  <!-- Grupo Usuario -->
+<form action="" class="formulario" id="formulario">
+<div class="formulario__grupo" id="grupo__usuario">
+  <label for="usuario" class="formulario__label">Usuario</label>
+  <div class="formulario__grupo-input">
+<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="LuisAlberto">
+<i class="formulario__validacion-estado far fa-times-circle"></i>
+  </div>
+  <p class="formulario__input-error"> El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+</div>
+
+
+ <!-- Grupo: Nombre -->
+ 
+  <div class="formulario__grupo" id="grupo__nombre">
+    <label for="nombre" class="formulario__label">nombre</label>
+    <div class="formulario__grupo-input">
+  <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Luis Alberto">
+  <i class="formulario__validacion-estado far fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error"> El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+  </div>
+
+  <!-- Grupo contraseña -->
+  <div class="formulario__grupo" id="grupo__contraseña">
+    <label for="contraseña" class="formulario__label">Contraseña</label>
+    <div class="formulario__grupo-input">
+  <input type="password" class="formulario__input" name="contraseña" id="contraseña" >
+  <i class="formulario__validacion-estado far fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos</p>
+  </div>
+
+
+ <!-- Grupo contraseña2-->
+  <div class="formulario__grupo" id="grupo__contraseña2">
+    <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
+    <div class="formulario__grupo-input">
+  <input type="password" class="formulario__input" name="contraseña2" id="contraseña2" >
+  <i class="formulario__validacion-estado far fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error">Ambas contraseñas tiene que ser iguales</p>
+  </div>
+
+
+ <!-- Grupo correo -->
+ 
+  <div class="formulario__grupo" id="grupo__correo">
+    <label for="correo" class="formulario__label">Correo Electronico</label>
+    <div class="formulario__grupo-input">
+  <input type="email" class="formulario__input" name="correo" id="correo" placeholder="corre@correo.com">
+  <i class="formulario__validacion-estado far fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error"> El correo solo puede contener numeros, letras, guion bajo y puntos.</p>
+  </div>
+
+  <!-- grupo telefono -->
+  <div class="formulario__grupo" id="grupo__telefono">
+    <label for="telefono" class="formulario__label">Telefono </label>
+    <div class="formulario__grupo-input">
+  <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1166657847">
+  <i class="formulario__validacion-estado far fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error"> El telefono solo puede contener numeros</p>
+  </div>
+
+
+
+  <!-- Grupo Terminos y condiciones -->
+<div class="formulario__grupo" id="grupo__terminos">
+<label class="formulario__label">
+  <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+  Acepto los terminos y Condiciones
+</label>
+</div>
+
+
+<!-- Error -->
+<div class="formulario__mensaje" id="formulario__mensaje">
+<p> <i class="fas fa-radiation-alt"></i> <b>Error:</b> Porfavor rellena el formulario</p>
+</div>
+
+<!-- boton -->
+<div class="formulario__grupo formulario__grupo-btn-enviar">
+  <button type="submit" class="formulario__btn">Enviar</button>
+  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito" > El formulario se envio exitosamente</p>
+</div>
+</form>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //formulario corto -->
+<!-- 
+<form class="formulario">
+  <h2 class="datos">Completa los datos</h2>
+<br>
+
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nombre">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" required>
+      <label class="form-check-label" for="gridCheck" >
+        Check me out
+      </label>
+    </div>
+  </div>
+</form> -->
+
+
+
+<!-- formulario con marco -->
+<!-- 
+<div class="form">
+    <form  class="formulario ">
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" required>
+          </div>
+        </div> -->
+     
+       
+        <!-- <div class="form-group col-md-6">
+          <label for="inputAddress2">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="" required>
+        </div>
+    
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">edad</label>
+            <input type="number" class="form-control" id="edad" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="sexo">sexo</label> 
+            <select id="sexo" class="form-control"placeholder="sexo" required>
+              <option ></option>
+              <option >Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+          
+        </div>   -->
+        <!-- <div class="form-group col-md-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck" >
+              Check me out
+            </label>
+          </div>
+        </div> -->
+        <!-- <button type="submit" class="btn btn-primary" id="sing-in">Sign in</button> -->
+        
+      <!-- </form>  -->
+
+    <!-- </div> -->
+      <!-- <button id="mostrar-foto">Mostrar foto al azar</button>
+      <div id="lista-fotos" class="lista-fotos">
+      </div> -->
+
+
+    <!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  
+
+<!-- bootstrap js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- codigo -->
+    <script src="js/script2.js"></script>
+</body>
+</html>
+
+
+
+

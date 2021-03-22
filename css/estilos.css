@@ -1,0 +1,168 @@
+
+.centrar{
+    text-align: center;
+}
+
+
+    
+.fondo-negro{
+    background-image    : url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgnWGz4kh-mTTcXgdf1J-Wfw4jdVlTJmeCg&usqp=CAU);
+
+    
+}
+
+.imagenes{
+        
+
+    width: 200px;
+
+}
+
+
+
+.costado{
+
+    width: 80%;
+    margin: auto;
+}
+
+
+.color-letra{
+    color: white;
+}
+
+.letra-p{
+    font-family: 'Coda Caption', sans-serif;  
+    text-align: center;
+
+}
+
+.navbar{
+    padding: 3%;
+    
+}
+
+.div-formulario{
+   width: 1000px;
+   height: 1000px;
+   margin-left: 280px;
+ 
+
+
+ 
+}
+
+
+.cards{
+
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    text-align: center;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.imgcarrusel{
+    padding-top: 22px;
+    height: 500px;
+    width: 50%;
+    margin-left: 400px;
+    
+    
+
+    
+text-align: center;
+    display: block;
+    
+    
+}
+
+
+.carrousel{
+    
+    /* distribuir elementos en el eje principal */
+    justify-content: space-between;
+   
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.letra-nav{
+    font-family: 'Londrina Solid', cursive;
+ 
+    color: blanchedalmond;
+   
+}
+
+.letrajumbo{
+    font-family: 'Rock Salt', cursive;;
+    text-align: center;
+    font-size: 100px;
+  color: red;
+}
+
+.final{
+    background-color: black;
+}
+
+.carrito{
+    margin-left: 600xp;
+}
+
+
+.boton{
+    margin-right: 600px;
+}
+
+
+.div1{
+    
+    width: 100% ;
+    height: 80px;
+}
+
+.letraMenu{
+    font-family: 'Coda Caption', sans-serif;  
+    font-size: 50px;
+  text-align: center;
+    color:black  ;
+    
+   
+}
+
+
+.SpanMenu{
+     height: 500px;
+     width: 100px;
+   
+}
+
+.letraP{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+.imgCarrito{
+    width: 100px;
+    margin-right: auto;
+}
+
+
+.derecha{
+    margin-left: 1260px;
+}
+
+.div-carrousel{
+    height: 50px;
+    width: 100%;
+   background-color: black;
+}
+
+
